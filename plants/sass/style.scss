@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/footer';
+@import './blocks/about';
+@import './blocks/service';
+@import './blocks/contacts';
+@import './blocks/prices';

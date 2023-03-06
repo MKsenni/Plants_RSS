@@ -1,0 +1,100 @@
+.about {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1222px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            max-width: 668px;
+        }
+
+        @media screen and (max-width: 380px) {
+            max-width: 330px;
+        }
+
+        .content {
+            max-width: 50%;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            &__title {
+                margin-top: 161px;
+                max-width: 80%;
+                font-family: 'Inika', sans-serif;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 52px;
+                color: #499A18;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 100%;
+                    padding: 0 123px;
+                    font-size: 35px;
+                    line-height: 46px; 
+                    margin-top: 40px;
+                }
+
+                @media screen and (max-width: 380px) {
+                    margin: 30px 0 22px;
+                    padding: 0;
+                    font-size: 25px;
+                    line-height: 33px;
+                }
+
+                span {
+                    color: #E06733;
+                }
+            }
+
+            &__text {
+                padding: 40px 0 155px;
+                width: 87%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #636060;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    padding: 40px 0;
+                    text-align: start;
+                }
+
+                @media screen and (max-width: 380px) {
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .image {
+            width: 50%;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+
+            &__plant {
+
+                @media screen and (max-width: 768px) {
+                    width: 250px;
+                    height: 258px;
+                    margin: 40px 0px 95px;
+                }
+
+                @media screen and (max-width: 380px) {
+                    width: 150px;
+                    height: 147px;
+                    margin: 0px 0px 31px;
+                }
+            }
+        }
+    }
+}
